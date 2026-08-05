@@ -18,9 +18,9 @@ jobs:
           sudo apt update
           sudo apt install -y git zip unzip openjdk-17-jdk python3-pip python3-setuptools curl libffi-dev libssl-dev build-essential
 
-      - name: Install Buildozer & Cython
+      - name: Install Buildozer, Cython & p4a
         run: |
-          pip install --upgrade buildozer cython==0.29.33
+          pip install --upgrade buildozer cython==0.29.33 python-for-android
 
       - name: Build APK with Buildozer
         run: |
